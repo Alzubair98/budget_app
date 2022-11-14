@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 html,
 body {
   height: 100%;
@@ -38,6 +41,14 @@ background-color: lightgray;
     font-weight: bold;
 }
 
+.name{
+    font-family: 'Qwitcher Grypen', cursive;
+    margin-left: 70%;
+    font-size: 2em;
+    color: #fff;
+    // text-transform: uppercase;
+}
+
 // home page 
 #home-cont{
     height: 100%;
@@ -55,7 +66,7 @@ background-color: lightgray;
 
 .text-cont{
     margin-top: 15rem;
-  }
+}
 
 .hr-home{
     border-top: solid white;
@@ -66,3 +77,8 @@ background-color: lightgray;
     color: #fff;
     font-weight: bold !important;
 }
+
+.a{
+    position: absolute;
+}
+
