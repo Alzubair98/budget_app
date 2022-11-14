@@ -1,0 +1,68 @@
+html,
+body {
+  height: 100%;
+}
+
+// footer and layout page
+#sticky-footer {
+    position: fixed;
+    height: 5%;
+    padding-top: 4px;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: none;
+}
+
+#page-content {
+flex: 1 0 auto;
+background-color: lightgray;
+}
+
+
+// no underline 
+.underline {
+    text-decoration: none;
+}
+
+// navbar 
+.nav-link {
+    color: white !important;
+}
+
+#logo {
+    float: left;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+// home page 
+#home-cont{
+    height: 100%;
+}
+
+.jumbotron{
+    position: fixed;
+    background-image: asset-url("budget.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.text-cont{
+    margin-top: 15rem;
+  }
+
+.hr-home{
+    border-top: solid white;
+    margin: 0 10rem;
+}
+
+.text{
+    color: #fff;
+    font-weight: bold !important;
+}
