@@ -1,0 +1,21 @@
+<h1 class="text-center mt-4">All Catagories </h1>
+
+<div class="card-cont mt-5">
+  <%@groups.each do |group|%>
+  <div class="card mb-3 bg-dark text-white border-info shadow-lg rounded" style="max-width: 540px; min-width: 280px">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="<%=group.icon%>" class="img-fluid rounded-start">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><%= group.name%></h5>
+          <p class="card-text">GONNA UPDATE THIS LATER.</p>
+          <p class="card-text"><small class="text-muted">created <%= time_ago_in_words(group.created_at) %> ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%end%>
+  <%= link_to 'Add New Catagory', new_group_path, class: "btn btn-outline-primary" %>
+</div>
