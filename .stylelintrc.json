@@ -6,7 +6,7 @@
       true,
       {
         "ignoreAtRules": [
-          "bootstrap"
+          "bootstrap",
           "tailwind",
           "apply",
           "variants",
