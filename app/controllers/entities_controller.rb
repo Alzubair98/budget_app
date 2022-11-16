@@ -12,6 +12,7 @@ class EntitiesController < ApplicationController
     def create 
         @entity = Entity.new(set_entity_params)
         @entity.user_id = current_user.id
+
         if @entity.save 
             redirect_to group_path(@entity.group_id)
         else 

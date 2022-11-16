@@ -4,17 +4,17 @@
   <%@groups.each do |group|%>
   <div class=" row justify-content-md-center">
     <div class="col-8 mt-4">
-      <div class="card mb-3 bg-dark text-white border-info shadow-lg rounded">
+      <div class="card mb-3 bg-white text-color border-info shadow-lg rounded">
         <div class="row g-0">
           <div class="col-md-4">
             <img src="<%=group.icon%>" class="img-fluid rounded-start">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title"><%= link_to  group.name.capitalize , group_path(group), class:"underline text-white"%></h5>
-              <p class="card-text">Total Amount:- <%= group.entities.sum(:amount)%> $.</p>
+              <h5 class="card-title"><%= link_to  group.name.capitalize , group_path(group), class:"underline text-color"%></h5>
+              <p class="card-text">Total Amount:- <%= group.entities.sum(:amount)%> $</p>
               <p class="card-text"><small class="text-muted">created <%= time_ago_in_words(group.created_at) %> ago</small></p>
-              <%= link_to 'View' , group_path(group), class:"bttn underline"%>
+              <%= link_to 'View' , group_path(group), class:"bttn underline text-color"%>
             </div>
           </div>
         </div>
