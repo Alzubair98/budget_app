@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://floating-shelf-06058.herokuapp.com/)
 
 ## Setup
 
