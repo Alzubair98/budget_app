@@ -50,9 +50,9 @@ RSpec.describe 'catagory page', type: :feature do
     expect(page).to have_content(@group1.name.capitalize.to_s)
   end
 
-  it 'shows the total amount time' do
+  it 'shows the total amount' do
     visit groups_path
-    expect(page).to have_content('Total Amount:-')
+    expect(page).to have_content('Total Amount :-')
   end
 
   it 'shows the footer' do

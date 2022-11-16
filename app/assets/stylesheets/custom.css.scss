@@ -5,17 +5,16 @@ html,
 body {
   height: 100%;
 }
-
 // footer and layout page
+
+#page-content{
+    flex: 1 0 auto;
+    background-color: lightgray;
+}
+
 #sticky-footer {
-    flex-shrink: none;
+    flex-shrink: 0;
 }
-
-#page-content {
-flex: 1 0 auto;
-background-color: lightgray;
-}
-
 
 // no underline 
 .underline {
@@ -256,3 +255,41 @@ background-color: lightgray;
 .text-color{
     color: darkgray;
 }
+ // cards 
+.card-cont{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 5px;
+    background-color: white;
+    height: 8rem;
+    width: 22rem;
+}
+.img-cont{
+    width: 40%;
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+    margin-left: 5px
+}
+
+.cont-text{
+    margin-bottom: -10px;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+}
+.cont-text h5{
+    margin: 0;
+    padding: 0;
+}
+
+.cont-text p{
+    margin: 0;
+    padding: 0;
+}
+

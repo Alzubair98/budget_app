@@ -2,8 +2,8 @@
 <div class="container">
   <h4 class='text-center'>Total Amount :- <%= @group.entities.sum(:amount)%>$</h4>
   <% @group.entities.order("created_at DESC").each do |entity| %>
-  <div class=" row justify-content-md-center">
-    <div class="col-8 mt-3">
+  <div class="row justify-content-md-center">
+    <div>
       <div class="bg-white text-color card text-center shadow-lg mb-5 rounded">
         <div class="card-body">
           <div>
