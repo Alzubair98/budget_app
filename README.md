@@ -68,16 +68,14 @@ Give a star ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
+- Inspiration by (designer)[https://www.behance.net/gregoirevella]
 - etc
 
 ## video
 
-- check this (link)[https://drive.google.com/drive/folders/1e5z4YFoYFhpK_oCVQ0g1wnITClikUGVA]
+- check this (link)[https://drive.google.com/drive/folders/1e5z4YFoYFhpK_oCVQ0g1wnITClikUGVA?usp=sharing]
 
 ## 📝 License
-
-The design was inspired by [This](https://creativecommons.org/licenses/by-nc/4.0/)
 
 This project is [MIT](./LICENSE) licensed.
 
