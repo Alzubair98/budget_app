@@ -68,7 +68,7 @@ Give a star ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration by (designer)[https://www.behance.net/gregoirevella]
+- - Great thanks to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) the [author of the original design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=).
 - etc
 
 ## video
