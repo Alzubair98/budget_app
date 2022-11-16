@@ -1,0 +1,15 @@
+<div id="home-cont">
+  <div class="jumbotron text-center">
+    <div class="text-cont">
+      <h1 class='display-4 text'>Zee App</h1>
+      <p class='lead text'>This is a simple budget app built using Rails</p>
+      <hr class="my-4 hr-home">
+      <p class='text'>Feel Free To Try It</p>
+      <% if user_signed_in? %>
+      <%= link_to "Sign out", destroy_user_session_path, data: { turbo_method: 'delete' },  class: "btn btn-danger btn-lg"%>
+      <%else%>
+      <%= link_to "Sign up!", new_user_registration_path,  class: "btn btn-success btn-lg"%> <%= link_to "Sign in", user_session_path, class: "btn btn-primary btn-lg"%>
+      <%end%>
+    </div>
+  </div>
+</div>
