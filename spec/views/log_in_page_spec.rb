@@ -1,4 +1,3 @@
-
 require_relative '../rails_helper'
 
 RSpec.describe 'Log in page', type: :feature do

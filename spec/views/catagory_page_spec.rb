@@ -13,7 +13,7 @@ RSpec.describe 'catagory page', type: :feature do
     fill_in 'Password', with: @user.password.to_s
     find("input[type='submit']").click
 
-    @group1 = Group.new(name:'first Group', icon:'first icon', user_id:@user.id)
+    @group1 = Group.new(name: 'first Group', icon: 'first icon', user_id: @user.id)
     @group1.save
   end
 
@@ -64,5 +64,4 @@ RSpec.describe 'catagory page', type: :feature do
     visit groups_path
     expect(page).to have_content('Add New Catagory')
   end
-
 end

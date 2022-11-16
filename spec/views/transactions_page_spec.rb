@@ -13,10 +13,10 @@ RSpec.describe 'catagory page', type: :feature do
     fill_in 'Password', with: @user.password.to_s
     find("input[type='submit']").click
 
-    @group1 = Group.new(name:'first Group', icon:'first icon', user_id:@user.id)
+    @group1 = Group.new(name: 'first Group', icon: 'first icon', user_id: @user.id)
     @group1.save
 
-    @tran1 = Entity.new(name:'first entity', amount: 30, user_id:@user.id, group_id: @group1.id)
+    @tran1 = Entity.new(name: 'first entity', amount: 30, user_id: @user.id, group_id: @group1.id)
     @tran1.save
   end
 
@@ -66,5 +66,4 @@ RSpec.describe 'catagory page', type: :feature do
     visit group_path(@group1)
     expect(page).to have_content('Add New Transaction')
   end
-
 end
