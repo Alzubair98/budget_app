@@ -2,16 +2,21 @@
 
 <div class="container">
   <%@groups.each do |group|%>
-
-  <div class='card-contt'>
-    <div class='img-cont'>
-      <img src="<%= group.icon%>" class='img'>
-    </div>
-    <div class='cont-text'>
-      <h5><%=link_to group.name.capitalize , group_path(group), class:'underline text-color'%></h5>
-      <p>Total Amount :- <%= group.entities.sum(:amount) %> $</p>
-      <%= link_to 'View' , group_path(group), class:'bttn underline text-color'%>
-      <p class="text-color"> created <%= time_ago_in_words(group.created_at) %> ago</p>
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="<%= group.icon%>" class="img-fluid rounded-start" alt="cat-image">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><%=link_to group.name.capitalize , group_path(group), class:'underline text-color'%></h5>
+          <p class="card-text">>Total Amount :- <%= group.entities.sum(:amount) %> $</p>
+          <%= link_to 'View' , group_path(group), class:'bttn underline text-color'%>
+          <p class="card-text text-color"><small class="text-muted">
+              created <%= time_ago_in_words(group.created_at) %> ago
+            </small></p>
+        </div>
+      </div>
     </div>
   </div>
   <%end%>
